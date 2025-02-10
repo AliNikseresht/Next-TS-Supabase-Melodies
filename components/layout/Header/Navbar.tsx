@@ -6,8 +6,8 @@ const Navbar = () => {
   return (
     <nav>
       <ul className="flex items-center gap-9">
-        {navbarItemsData.map((item) => (
-          <li>
+        {navbarItemsData.map((item, index) => (
+          <li key={index}>
             <Link className="text-[#ffffff] hover:text-[#FF9F0D] duration-300" href={item.href}>{item.name}</Link>
           </li>
         ))}
